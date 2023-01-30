@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  exportTrailingSlash: true,
+  trailingSlas: true,
+  images: {
+    unoptimized: true
+  },
   exportPathMap: function () {
     return {
       '/': { page: '/' }
